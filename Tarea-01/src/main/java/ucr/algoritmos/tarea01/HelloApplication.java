@@ -10,7 +10,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        // Cargamos la nueva vista del Multi-Conversor
+        // Cargamos la vista del Multi-Conversor desde resources
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("multi-conversor-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 450);
         stage.setTitle("Multi-Conversor de Grupo");
