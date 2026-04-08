@@ -8,4 +8,6 @@ module ucr.algoritmos.pg02 {
     exports ucr.algoritmos.pg02;
     exports controller;
     opens controller to javafx.fxml;
+    exports model;
+    opens model to javafx.fxml;
 }
