@@ -13,10 +13,18 @@ public class Greedy {
             return usadas;  // Caso edge: monto cero o negativo, retornar lista vacía
         }
         for (int moneda : monedas) {
+            int count = 0;
+
+
             while (monto >= moneda) {
-                usadas.add(String.valueOf(moneda));
+                count++;
                 monto -= moneda;  // Restar la moneda al monto
+
             }
+             if (count >  0) {
+                 String detalle = moneda + " X "+ count+ ", restante: " + monto;
+                 usadas.add(detalle);
+             }
         }
         return usadas;  // Lista de monedas usadas
     }
