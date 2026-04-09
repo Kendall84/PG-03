@@ -37,8 +37,8 @@ public class Greedy {
     public static class KnapsackResult{
         public final Item[] sortedItems;
         public final List<Item> selected;
-        private final double maxValue;
-        private final int maxWeight;
+        public final double maxValue;
+        public final int maxWeight;
         private final int capacity;
         public final long nanoTime;
 

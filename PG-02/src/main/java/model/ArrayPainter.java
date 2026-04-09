@@ -15,10 +15,10 @@ import model.SearchResult;
 public class ArrayPainter {
 
     // ── Paleta UCR ────────────────────────────────────────────────────────────
-    private static final Color COL_DEFAULT   = Color.web("#1F3868");   // azul UCR
+    private static final Color COL_DEFAULT   = Color.STEELBLUE;   // azul para barras normales
     private static final Color COL_ACTIVE    = Color.web("#E74C3C");   // rojo – comparando ahora
     private static final Color COL_RANGE_LO  = Color.web("#4A90D9");   // azul claro – dentro del rango
-    private static final Color COL_FOUND     = Color.web("#1A8C7B");   // verde – encontrado
+    private static final Color COL_FOUND     = Color.DARKGREEN;   // verde oscuro – encontrado
     private static final Color COL_VISITED   = Color.web("#8896A5");   // gris – ya visitado
     private static final Color COL_OUT       = Color.web("#D0D6E0");   // muy claro – fuera del rango
     private static final Color COL_TEXT      = Color.WHITE;
