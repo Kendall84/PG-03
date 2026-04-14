@@ -14,38 +14,25 @@ import ucr.algoritmos.tarea01.model.ConversorTemperatura;
 
 public class MainController {
 
-    @FXML
-    private TextField txtDolares;
-    @FXML
-    private Label lblResultadoDolares;
-
-    @FXML
-    private TextField txtKilometros;
-    @FXML
-    private Label lblResultadoKilometros;
-
-    @FXML
-    private TextField txtCelsius;
-    @FXML
-    private Label lblResultadoTemperatura;
-
+    @FXML private TextField txtDolares;
+    @FXML private Label lblResultadoDolares;
+    @FXML private TextField txtKilometros;
+    @FXML private Label lblResultadoKilometros;
+    @FXML private TextField txtCelsius;
+    @FXML private Label lblResultadoTemperatura;
 
      //Acción del botón de conversión para dólares.
-    @FXML
-    protected void onBtnDolaresClick() {
+    @FXML protected void onBtnDolaresClick() {
         procesarConversion(txtDolares, lblResultadoDolares, new ConversorDolares(), " Colones");
     }
 
     // Acción del botón de conversión para kilómetros.
-    @FXML
-    protected void onBtnKilometrosClick() {
+    @FXML protected void onBtnKilometrosClick() {
         procesarConversion(txtKilometros, lblResultadoKilometros, new ConversorKilometros(), " Metros");
     }
 
-
      //Acción del botón de conversión para temperatura.
-    @FXML
-    protected void onBtnTemperaturaClick() {
+    @FXML protected void onBtnTemperaturaClick() {
         procesarConversion(txtCelsius, lblResultadoTemperatura, new ConversorTemperatura(), " °F");
     }
 
